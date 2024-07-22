@@ -1,0 +1,35 @@
+Function Main
+    ... Ashlei Kearse-cti-110-0003
+    ... 
+    Declare Integer number1, number2
+    Declare String control
+
+    Assign control = ""
+    Assign number1 = 0
+    Assign number2 = 0
+    Output "add = A, subtract = s, quit = K"
+    While true
+        Input control
+        If control == "A"
+            Output "enter first number"
+            Input number1
+            Output "enter second number"
+            Input number2
+            Output number1+number2
+        Else
+            If control=="s"
+                Output "enter first number"
+                Input number1
+                Output "enter second number"
+                Input number2
+                Output number1-number2
+            Else
+                If control=="K"
+                    Output "quit..."
+                Else
+                    Output "error: input again?"
+                End
+            End
+        End
+    End
+End

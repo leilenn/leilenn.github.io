@@ -1,0 +1,8 @@
+add = A, subtract = s, quit = K
+s
+enter first number
+5
+enter second number
+4
+1
+

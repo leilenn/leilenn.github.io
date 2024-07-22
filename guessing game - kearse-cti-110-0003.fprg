@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alkea"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-14 10:19:30 PM"/>
+        <attribute name="created" value="YWxrZWE7TEFQVE9QLU1BRUhHODA3OzIwMjQtMDctMTE7MDE6MjQ6NTMgUE07MjgwOA=="/>
+        <attribute name="edited" value="YWxrZWE7TEFQVE9QLU1BRUhHODA3OzIwMjQtMDctMTQ7MTA6MTk6MzAgUE07MjsyOTE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="ashlei kearse-cti-110-0003&#13;&#10;"/>
+            <declare name="secret" type="Integer" array="False" size=""/>
+            <declare name="guess" type="Integer" array="False" size=""/>
+            <comment text="the numbers range from 1-100 in this game."/>
+            <comment text="test case 1: i tested the game to see if the flow chart had no mistakes. i then tried to make a quit option.&#13;&#10;&#13;&#10;test case 2: i tried inputing the quit option and it did not work very well i kept running into an error. "/>
+            <assign variable="secret" expression="random(100) + 1"/>
+            <assign variable="guess" expression="(1-100)"/>
+            <output expression="&quot;a number guessing game! enter your first number or press Q to quit&quot;" newline="True"/>
+            <while expression="guess!=secret">
+                <input variable="guess"/>
+                <if expression="guess &gt; secret">
+                    <then>
+                        <output expression="&quot;guess too HIGH&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="guess &lt; secret">
+                    <then>
+                        <output expression="&quot;guess too LOW&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="&quot;correct!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

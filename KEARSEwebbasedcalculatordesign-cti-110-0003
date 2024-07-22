@@ -1,0 +1,30 @@
+# Ashlei Kearse-cti-110-0003
+# test case 1: i pressed a for add and inout my first number i was then asked to enter a second number and i input a number. after i entered the second number i pressed enter to show the sum of both numbers added together.
+# 
+# test case 2: i pressed s for subtract and i was asked to enter my first number. i then entered my first number. after entering my first number i was asked to enter my second number. when i pressed enter the diffrence of both numbers was shown.
+# 
+# test case 3: i pressed K to quit the calculator and it showed me a quit message.
+control = ""
+number1 = 0
+number2 = 0
+print("add = A, subtract = s, quit = K")
+while True:
+    control = input()
+    if control == "A":
+        print("enter first number")
+        number1 = int(input())
+        print("enter second number")
+        number2 = int(input())
+        print(number1 + number2)
+    else:
+        if control == "s":
+            print("enter first number")
+            number1 = int(input())
+            print("enter second number")
+            number2 = int(input())
+            print(number1 - number2)
+        else:
+            if control == "K":
+                print("quit...")
+            else:
+                print("error: input again?")

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alkea"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-04 06:53:46 PM"/>
+        <attribute name="created" value="YWxrZWE7TEFQVE9QLU1BRUhHODA3OzIwMjQtMDctMDQ7MDY6MjQ6MDYgUE07MjgxMw=="/>
+        <attribute name="edited" value="YWxrZWE7TEFQVE9QLU1BRUhHODA3OzIwMjQtMDctMDQ7MDY6NTM6NDYgUE07MjsyOTI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="ashlei kearse-cti-110"/>
+            <comment text="if someone entered 1+1 they would get the output 2.&#13;&#10;if someone entered 1-1 they would get the output 0"/>
+            <declare name="num1" type="Integer" array="True" size="2"/>
+            <declare name="" type="Integer" array="False" size=""/>
+            <input variable="num1"/>
+            <output expression="1" newline="True"/>
+            <input variable="num2"/>
+            <output expression="2" newline="True"/>
+            <declare name="subtraction" type="Integer" array="True" size="2"/>
+            <assign variable="subtraction" expression="1-1"/>
+            <declare name="adding" type="Integer" array="True" size="2"/>
+            <assign variable="adding" expression="1+1"/>
+        </body>
+    </function>
+</flowgorithm>
